@@ -1,8 +1,8 @@
-module "vpc" {
-    source  = "app.terraform.io/guptaa-training/network/google"
-    version = "~> 3.0"
-
-    project_id   = var.project
+module "network" {
+  source  = "app.terraform.io/guptaa-training/network/google"
+  version = "3.3.0"
+  # insert required variables here
+      project_id   = var.project
     network_name = "example-vpc"
     routing_mode = "GLOBAL"
 
